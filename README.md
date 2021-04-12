@@ -2,6 +2,7 @@
 
 Collection of Makefile files.
 
+[![Linters](https://github.com/aifrak/makefile-utils/actions/workflows/linters.yml/badge.svg)](https://github.com/aifrak/makefile-utils/actions/workflows/linters.yml)
 [![GitHub](https://img.shields.io/github/license/aifrak/makefile-utils?color=blue)](https://github.com/aifrak/makefile-utils/blob/master/LICENSE)
 
 ## Usage

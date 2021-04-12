@@ -6,11 +6,16 @@ SHELL := sh
 
 DOCKER := docker
 
+# Docker image for Shellcheck
 SHELLCHECK := koalaman/shellcheck:v0.7.1
+# Path of the project inside Docker container
 SHELLCHECK_PATH := ./src/**.sh
+# Path of the project on the host when Shellcheck
 SHELLCHECK_HOST_DIR := ${PWD}
 
+# Docker image for Shellspec
 SHELLSPEC := shellspec/shellspec:0.28.1
+# Path of the project on the host when Shellspec
 SHELLSPEC_HOST_DIR := ${PWD}
 
 # Print list of commands

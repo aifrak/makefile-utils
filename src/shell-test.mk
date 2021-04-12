@@ -6,16 +6,16 @@ SHELL := sh
 
 DOCKER := docker
 
-# Docker image for Shellcheck
+# Docker image for ShellCheck
 SHELLCHECK := koalaman/shellcheck:v0.7.1
 # Path of the project inside Docker container
 SHELLCHECK_PATH := ./src/**.sh
-# Path of the project on the host when Shellcheck
+# Path of the project on the host when ShellCheck
 SHELLCHECK_HOST_DIR := ${PWD}
 
-# Docker image for Shellspec
+# Docker image for ShellSpec
 SHELLSPEC := shellspec/shellspec:0.28.1
-# Path of the project on the host when Shellspec
+# Path of the project on the host when ShellSpec
 SHELLSPEC_HOST_DIR := ${PWD}
 
 # Print list of commands
@@ -26,7 +26,7 @@ shell-help:
 	@echo "  shell-test-all:          Run all unit tests and linter for shell scripts"
 	@echo "  shell-linter:            Run shell linter"
 	@echo "  shell-tests:             Run shell unit tests"
-	@echo "  shell-tests-format:      Run check format on Shellspec files"
+	@echo "  shell-tests-format:      Run check format on ShellSpec files"
 
 # Run all unit tests and linter for shell scripts
 .PHONY: shell-test-all
@@ -53,7 +53,7 @@ shell-tests:
 	--format progress --jobs 10
 	@echo $(call print_success, "Shell unit tests: OK")
 
-# Run check format on Shellspec files
+# Run check format on ShellSpec files
 .PHONY: shell-tests-format
 shell-tests-format:
 	@echo ""

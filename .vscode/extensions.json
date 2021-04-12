@@ -11,8 +11,12 @@
     "cschleiden.vscode-github-actions",
 
     // Markdown:
+    "davidanson.vscode-markdownlint",
+    "shd101wyy.markdown-preview-enhanced",
     "yzhang.markdown-all-in-one",
-    "davidanson.vscode-markdownlint"
+
+    // Formatter:
+    "mblode.pretty-formatter" // Markdown
   ],
   // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
   "unwantedRecommendations": []

@@ -8,4 +8,9 @@
     "markdownlint",
     "nosborn"
   ],
+
+  // Markdownlint:
+  "markdownlint.config": {
+    "MD013": true
+  }
 }

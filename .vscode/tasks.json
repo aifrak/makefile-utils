@@ -36,7 +36,7 @@
       "command": "make",
       "args": ["shell-tests-format"],
       "problemMatcher": [],
-      "detail": "Run check format on Shellspec files"
+      "detail": "Run check format on ShellSpec files"
     }
-  ],
+  ]
 }

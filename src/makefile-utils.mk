@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Colors
 GREEN = $(shell echo "\e[32m")
 NORMAL = $(shell echo "\e[0m")
 

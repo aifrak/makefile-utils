@@ -1,11 +1,13 @@
-name: Linters
+name: Markdown linter
 
 on:
   push:
+    paths:
+      - '**.md'
 
 jobs:
   linters:
-    name: Linters
+    name: Markdown linter
     runs-on: ubuntu-20.04
 
     steps:

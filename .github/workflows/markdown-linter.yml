@@ -1,29 +1,21 @@
 name: Markdown linter
 
-on: ['push', 'pull_request']
+on:
+  push:
+    paths:
+      - "**.md"
+  pull_request:
 
 jobs:
-  skip_duplicate:
-    name: Skip duplicate actions
-    continue-on-error: true
-    runs-on: ubuntu-20.04
-    outputs:
-      should_skip: ${{ steps.skip_check.outputs.should_skip }}
-    steps:
-      - id: skip_check
-        uses: fkirc/skip-duplicate-actions@master
-        with:
-          concurrent_skipping: 'same_content'
-          do_not_skip: '["pull_request", "workflow_dispatch", "schedule"]'
-
   lint:
     name: Markdown linter
-    needs: skip_duplicate
-    if: ${{ needs.skip_duplicate.outputs.should_skip != 'true' }}
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name != github.repository
     runs-on: ubuntu-20.04
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
       - name: Markdown linter (markdownlint-cli)
         uses: nosborn/github-action-markdown-cli@v1.1.1
         with:

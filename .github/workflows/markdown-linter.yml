@@ -2,21 +2,28 @@ name: Markdown linter
 
 on:
   push:
-    branches:
-      - main
     paths:
-      - '**.md'
-  pull_request:
+      - "**.md"
 
 jobs:
-  linters:
-    name: Markdown linter
+  skip_duplicate:
+    name: Skip duplicate actions
+    continue-on-error: true
     runs-on: ubuntu-20.04
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - id: skip_check
+        uses: fkirc/skip-duplicate-actions@master
 
+  lint:
+    name: Markdown linter
+    needs: skip_duplicate
+    if: ${{ needs.skip_duplicate.outputs.should_skip != 'true' }}
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
       - name: Markdown linter (markdownlint-cli)
         uses: nosborn/github-action-markdown-cli@v1.1.1
         with:

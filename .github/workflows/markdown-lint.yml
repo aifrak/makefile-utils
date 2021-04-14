@@ -1,4 +1,4 @@
-name: Markdown linter
+name: Markdown lint
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 jobs:
   lint:
 
-    name: Markdown linter
+    name: Markdown lint
     # Avoid duplicated trigger on "push" and "pull request"
     if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name != github.repository
     runs-on: ubuntu-20.04
@@ -19,7 +19,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Markdown linter (markdownlint-cli)
+      - name: Markdown lint (markdownlint-cli)
         uses: nosborn/github-action-markdown-cli@v1.1.1
         with:
           files: .

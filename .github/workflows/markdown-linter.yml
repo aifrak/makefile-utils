@@ -1,9 +1,6 @@
 name: Markdown linter
 
-on:
-  push:
-    paths:
-      - "**.md"
+on: ['push', 'pull_request']
 
 jobs:
   skip_duplicate:

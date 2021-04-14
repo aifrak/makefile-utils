@@ -2,7 +2,7 @@
 
 Collection of Makefile files.
 
-[![Markdown linter](https://github.com/aifrak/makefile-utils/actions/workflows/markdown-linter.yml/badge.svg)](https://github.com/aifrak/makefile-utils/actions/workflows/markdown-linter.yml)
+[![Markdown lint](https://github.com/aifrak/makefile-utils/actions/workflows/markdown-lint.yml/badge.svg)](https://github.com/aifrak/makefile-utils/actions/workflows/markdown-lint.yml)
 [![GitHub](https://img.shields.io/github/license/aifrak/makefile-utils?color=blue)](https://github.com/aifrak/makefile-utils/blob/master/LICENSE)
 
 ## Usage

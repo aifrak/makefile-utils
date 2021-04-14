@@ -7,7 +7,7 @@ Collection of Makefile files.
 
 ## Usage
 
-1. Copy the files under `/src` directory for direct usage.
+1. Copy   the files under `/src` directory for direct usage.
 2. Set `MAKEFILE_UTILS_DIR` in your parent Makefile with your path to the copied
 files.
 

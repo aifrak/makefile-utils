@@ -16,7 +16,7 @@
     "yzhang.markdown-all-in-one",
 
     // Formatters:
-    "esbenp.prettier-vscode", // YAML, Markdown
+    "esbenp.prettier-vscode", // YAML,  (ShellCheck)Markdown
 
     // Comments:
     "zfzackfrost.commentbars"

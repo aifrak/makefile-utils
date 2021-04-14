@@ -15,7 +15,7 @@
       "detail": "Run tests used to build Docker image (Docker Hub automated tests)"
     },
     // -----------------------------------------------
-    // --------- Shell unit tests / linter -----------
+    // --------- Shell unit tests / lint -----------
     // -----------------------------------------------
     {
       "label": "shell-test-all",
@@ -42,10 +42,10 @@
       "detail": "Run Shell unit tests"
     },
     {
-      "label": "shell-test-format",
+      "label": "shell-lint-tests",
       "type": "shell",
       "command": "make",
-      "args": ["shell-test-format"],
+      "args": ["shell-lint-tests"],
       "problemMatcher": [],
       "detail": "Lint Shell unit tests (ShellSpec)"
     }

@@ -30,7 +30,7 @@ shell-help:
 
 # Run all unit tests and linter for shell scripts
 .PHONY: shell-test-all
-shell-test-all: shell-lint shell-test-format shell-test
+shell-test-all: shell-lint shell-lint-tests shell-test
 
 # Lint Shell scripts
 .PHONY: shell-lint
@@ -54,8 +54,8 @@ shell-test:
 	@echo $(call print_success, "✔ Run Shell unit tests: OK")
 
 # Lint Shell unit tests (ShellSpec)
-.PHONY: shell-test-lint
-shell-test-format:
+.PHONY: shell-lint-tests
+shell-lint-tests:
 	@echo ""
 	@echo "- Lint Shell unit tests (ShellSpec):"
 	@echo ""

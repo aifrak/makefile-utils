@@ -15,7 +15,7 @@
       "detail": "Run tests used to build Docker image (Docker Hub automated tests)"
     },
     // -----------------------------------------------
-    // --------- Shell unit tests / lint -----------
+    // ---------- Shell unit tests / lint ------------
     // -----------------------------------------------
     {
       "label": "shell-test-all",

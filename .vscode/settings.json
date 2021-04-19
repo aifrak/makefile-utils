@@ -1,27 +1,27 @@
 {
+  // Editor:
+  "editor.rulers": [80],
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+
+  // Files:
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  // Override languages:
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
   // Spelling:
-  "cSpell.userWords": [
-    "Shellcheck",
-    "Shellspec",
-  ],
-  "cSpell.words": [
-    "markdownlint",
-    "nosborn"
-  ],
+  "cSpell.userWords": ["Shellcheck", "Shellspec"],
+  "cSpell.words": ["markdownlint", "nosborn"],
 
   // Markdownlint:
   "markdownlint.config": {
     "MD013": true
   },
 
-  // Comment bars:
-  "commentbars.quickPresets": [
-    {
-      "label": "Section title",
-      "fillChar": "-",
-      "width": 50,
-      "thickness": 3,
-      "seamlessFill": false
-    },
-  ]
+  // Comment Divider:
+  "comment-divider.length": 50
 }

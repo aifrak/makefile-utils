@@ -14,8 +14,21 @@
   },
 
   // Spelling:
+  "cSpell.enableFiletypes": [
+    "plaintext",
+    "dockerfile",
+    "git-commit",
+    "git-rebase",
+    "json",
+    "jsonc",
+    "makefile",
+    "markdown",
+    "text",
+    "yaml",
+    "yml"
+  ],
   "cSpell.userWords": ["Shellcheck", "Shellspec"],
-  "cSpell.words": ["markdownlint", "nosborn"],
+  "cSpell.words": ["deps", "koalaman", "markdownlint", "nosborn"],
 
   // Markdownlint:
   "markdownlint.config": {

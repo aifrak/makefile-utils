@@ -19,4 +19,4 @@ docker-hub-sut:
 	$(DOCKER_COMPOSE) --file docker-compose.test.yml down \
 		--volumes --remove-orphans --rmi all
 	@echo ""
-	@echo $(call print_success, "✔ Test Docker image build (Docker Hub sut): OK")
+	@echo $(call print_success, "✔ Test Docker image build \(Docker Hub sut\): OK")
